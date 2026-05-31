@@ -1,42 +1,94 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="UTF-8">
-<title>ECHTJETZT?</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ECHTJETZT? - Ein Podcast von Jugendlichen. Für Jugendliche. Über das echte Leben.">
+    <meta name="keywords" content="Podcast, Jugendliche, Diskussion, echtes Leben, Schule, Freundschaften">
+    <meta property="og:title" content="ECHTJETZT? Podcast">
+    <meta property="og:description" content="Von Jugendlichen. Für Jugendliche. Über das echte Leben.">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#ff6b6b">
+    <title>ECHTJETZT? - Der Podcast für Jugendliche</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' fill='%23ff6b6b'>?</text></svg>">
 </head>
 
 <body>
 
 <header>
-  <div class="logo">ECHTJETZT?</div>
-  <nav>
-    <a href="index.html">Start</a>
-    <a href="folgen.html">Folgen</a>
-    <a href="community.html">Community</a>
-    <a href="ueber.html">Über</a>
-    <a href="hilfe.html">Hilfe</a>
-  </nav>
+    <div class="header-container">
+        <div class="logo">
+            <span class="logo-icon">🎙️</span>
+            <span>ECHTJETZT?</span>
+        </div>
+        <button class="menu-toggle" id="menuToggle">☰</button>
+        <nav id="navMenu" class="nav">
+            <a href="index.html" class="active">Start</a>
+            <a href="folgen.html">Folgen</a>
+            <a href="community.html">Community</a>
+            <a href="ueber.html">Über</a>
+            <a href="hilfe.html">Hilfe</a>
+        </nav>
+    </div>
 </header>
 
 <div class="hero">
-  <h1>Hier darf über alles gesprochen werden.</h1>
-  <p>Von Jugendlichen. Für Jugendliche. Über das echte Leben.</p>
+    <h1>Hier darf über alles gesprochen werden.</h1>
+    <p class="subtitle">Von Jugendlichen. Für Jugendliche. Über das echte Leben.</p>
 
-  <div class="buttons">
-    <a href="#">Spotify</a>
-    <a href="#">Amazon Music</a>
-    <a href="#">TikTok</a>
-  </div>
+    <div class="buttons">
+        <a href="https://open.spotify.com/show/YOUR_SHOW_ID" class="btn btn-primary" target="_blank">🎵 Spotify</a>
+        <a href="https://music.amazon.com/podcasts/YOUR_SHOW_ID" class="btn btn-secondary" target="_blank">🎧 Amazon Music</a>
+        <a href="https://www.tiktok.com/@your_account" class="btn btn-tertiary" target="_blank">📱 TikTok</a>
+    </div>
 </div>
 
 <div class="container">
-  <h2>Neueste Folge</h2>
-  <div class="card">
-    <h3>Platzhalter Titel</h3>
-    <p>Kurze Beschreibung der neuesten Episode.</p>
-  </div>
+    <section class="latest-episode">
+        <h2>📻 Neueste Folge</h2>
+        <div class="card">
+            <h3>Platzhalter Titel</h3>
+            <p>Kurze Beschreibung der neuesten Episode.</p>
+            <a href="folgen.html" class="link">Alle Folgen ansehen →</a>
+        </div>
+    </section>
+
+    <section class="features">
+        <h2>Was macht ECHTJETZT? besonders?</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h3>💬 Authentisch</h3>
+                <p>Echte Gespräche über echte Probleme ohne Vorbehalte</p>
+            </div>
+            <div class="feature-card">
+                <h3>👥 Von Jugendlichen</h3>
+                <p>Moderiert und geprägt von jungen Menschen wie dir</p>
+            </div>
+            <div class="feature-card">
+                <h3>🎯 Für Jugendliche</h3>
+                <p>Themen und Diskussionen, die dich wirklich interessieren</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <h2>Werde Teil unserer Community!</h2>
+        <p>Hast du Fragen, Ideen oder möchtest über ein Thema sprechen?</p>
+        <a href="community.html" class="btn btn-primary">Community beitreten</a>
+    </section>
 </div>
+
+<footer>
+    <p>&copy; 2026 ECHTJETZT?. Alle Rechte vorbehalten.</p>
+    <div class="footer-links">
+        <a href="ueber.html">Über uns</a>
+        <a href="hilfe.html">Kontakt</a>
+        <a href="https://github.com/ECHTJETZT-Admin/ECHTJETZT-Website" target="_blank">GitHub</a>
+    </div>
+</footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
