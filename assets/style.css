@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kontaktiere uns - Schreib uns eine Nachricht.">
+  <title>Kontakt | ECHTJETZT</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+<body>
+  <!-- NAVIGATION -->
+  <nav class="nav">
+    <div class="nav-container">
+      <div class="logo">ECHTJETZT?</div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="community.html">Community</a>
+        <a href="about.html">Über</a>
+        <a href="help.html">Hilfe</a>
+        <a href="contact.html" class="active">Kontakt</a>
+      </div>
+      <div class="nav-mobile" id="navMobile">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <h1>Kontakt</h1>
+      <p>Wir freuen uns auf deine Nachricht.</p>
+    </div>
+  </section>
+
+  <!-- CONTENT -->
+  <section class="page-content">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="content-box">
+          <h2>Schreib uns</h2>
+          <p>Hast du Feedback, Fragen oder möchtest mithelfen? Sag uns Bescheid!</p>
+
+          <!-- FORMSPREE FORM -->
+          <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name">Dein Name</label>
+              <input type="text" id="name" name="name" required placeholder="Max Mustermann">
+            </div>
+
+            <div class="form-group">
+              <label for="email">Deine E-Mail</label>
+              <input type="email" id="email" name="email" required placeholder="deine.email@example.com">
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Betreff</label>
+              <select id="subject" name="subject" required>
+                <option value="">-- Bitte wählen --</option>
+                <option value="feedback">Feedback</option>
+                <option value="bug">Fehler melden</option>
+                <option value="feature">Feature-Vorschlag</option>
+                <option value="question">Frage</option>
+                <option value="partnership">Zusammenarbeit</option>
+                <option value="other">Sonstiges</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Nachricht</label>
+              <textarea id="message" name="message" rows="6" required placeholder="Schreib hier deine Nachricht..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Nachricht senden</button>
+          </form>
+
+          <p class="form-note">⚠️ <strong>Hinweis:</strong> Das Formular nutzt Formspree. Ersetze „YOUR_FORM_ID" mit deiner echten Form-ID oder nutze direkt die E-Mail-Option unten.</p>
+        </div>
+
+        <aside class="contact-info">
+          <div class="info-box">
+            <h3>📧 E-Mail</h3>
+            <p>Schreib uns direkt an:</p>
+            <a href="mailto:hallo@echtjetzt.de" class="contact-link">hallo@echtjetzt.de</a>
+          </div>
+
+          <div class="info-box">
+            <h3>💬 Social Media</h3>
+            <p>Folge uns auf:</p>
+            <div class="social-links">
+              <a href="#" class="social-link">Instagram</a>
+              <a href="#" class="social-link">TikTok</a>
+              <a href="#" class="social-link">YouTube</a>
+            </div>
+          </div>
+
+          <div class="info-box">
+            <h3>🎙️ Podcast</h3>
+            <p>Hör unseren Podcast an:</p>
+            <ul class="platform-list">
+              <li><a href="#">🎵 Spotify</a></li>
+              <li><a href="#">🎙️ Apple Podcasts</a></li>
+              <li><a href="#">🎵 Amazon Music</a></li>
+            </ul>
+          </div>
+
+          <div class="info-box">
+            <h3>⏱️ Antwortzeit</h3>
+            <p>Wir versuchen, innerhalb von 24 Stunden zu antworten.</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>ECHTJETZT</h4>
+          <p>Eine Plattform für echte Gespräche.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="about.html">Über</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="help.html">Hilfe</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 ECHTJETZT. Alle Rechte vorbehalten.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
